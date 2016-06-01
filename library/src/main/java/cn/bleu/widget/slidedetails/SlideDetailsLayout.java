@@ -133,7 +133,7 @@ public class SlideDetailsLayout extends ViewGroup {
      */
     public void smoothClose(boolean smooth) {
         if (mStatus != Status.CLOSE) {
-            mStatus = Status.OPEN;
+            mStatus = Status.CLOSE;
             final float height = -getMeasuredHeight();
             animatorSwitch(height, 0, true, smooth ? mDuration : 0);
         }
